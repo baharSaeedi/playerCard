@@ -1,0 +1,143 @@
+.cardContainer {
+  width: 550px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(23, 24, 24, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.extraBox {
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+}
+
+.cardContainer:hover .extraBox {
+  width: 550px;
+}
+
+.extraBox .playerBox {
+  width: 200px;
+  height: 300px;
+  border-radius: 8px 0 0 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.playerBox .playerImg {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-color: rgb(176, 210, 229);
+  margin: 16px 0;
+  position: relative;
+}
+
+.playerBox .playerImg > i {
+  font-size: 90px;
+  color: rgb(134, 101, 194);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.playerBox .playerLevel,
+.playerBox .playerPoints {
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(23, 24, 24, 0.2);
+  padding: 4px 8px;
+  border-radius: 16px;
+}
+
+.detailBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 350px;
+  height: 300px;
+  border-radius: 0 8px 8px 0;
+  position: absolute;
+  left: 200px;
+  top: 0;
+  z-index: 999;
+}
+
+.detailBox .wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailBox .wrapper .playerName {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.detailBox .wrapper .headers {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 4px 10px;
+  justify-items: center;
+}
+
+.detailBox .scoreBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.detailBox .ScoreData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.dataBox {
+  height: 300px;
+  width: 350px;
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  left: 200px;
+}
+
+.dataBox .playerName {
+  color: #323232;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.dataBox .loremIpsum {
+  padding: 0 20px;
+}
+
+.dataBox .explain {
+  align-self: flex-end;
+  padding: 0 20px;
+}
